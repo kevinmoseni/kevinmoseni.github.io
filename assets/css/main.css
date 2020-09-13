@@ -1450,12 +1450,15 @@
 
 	a {
 		color: inherit;
-		text-decoration: none;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
-		-moz-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		text-decoration:none;
+		border-bottom: solid 0.01em rgba(255, 255, 255, 0.15);
+		-moz-transition: border-bottom-color 0.1s ease-in-out, color 0.2s ease-in-out;
+        
+		-webkit-transition: border-bottom-color 0.1s ease-in-out, color 0.2s ease-in-out;
+        
+		-ms-transition: border-bottom-color 0.1s ease-in-out, color 0.2s ease-in-out;
+
+		transition: border-bottom-color 0.1s ease-in-out, color 0.2s ease-in-out;
 	}
 
 		a:hover {
@@ -1486,6 +1489,7 @@
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
+
 		}
 
 		@media screen and (max-width: 980px) {
@@ -1978,15 +1982,21 @@
 		}
 
 	ul {
-/*
-		list-style: disc;
+
+/*		
+        list-style: disc; 
 */
-		margin: 0 0 0em 0;
-		padding-left: 0em;
+
+		margin: 0em 0em 0em 0em;
+/*		padding-left: 0em;*/
+        text-align: center;
+        width: 100%;
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			padding-left: 0em;
+            float: left;
+            width: 33%;
 		}
 
 		ul.alt {
@@ -2595,12 +2605,16 @@
 
 		#header h1 {
 			color: rgba(255, 255, 255, 0.8);
+/*            height: 20px;*/
+            width: 100%;
+            background-color: rgba(0,0,0,0.25)
+            
 		}
 
 		#header .avatar {
 			border-radius: 100%;
 			display: inline-block;
-			margin: -1.5em 0 1em 0;
+			margin: 0em 0 1em 0;
 			padding: 0.5em;
 			border: solid 1px rgba(255, 255, 255, 0.025);
 			background-color: rgba(255, 255, 255, 0.075);
