@@ -1994,9 +1994,10 @@
 	}
 
 		ul li {
-			padding-left: 0em;
-            float: left;
-            width: 33%;
+			padding-left: 2em;
+            padding-right: 2em;
+            float: left ;
+            width: 33.33%;
 		}
 
 		ul.alt {
