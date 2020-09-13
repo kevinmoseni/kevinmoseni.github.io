@@ -1988,14 +1988,17 @@
 */
 
 		margin: 0em 0em 0em 0em;
-/*		padding-left: 0em;*/
+		padding-left: 0.5em;
+        padding-right: 0.5em;
         text-align: center;
-        width: 100%;
+/*        width: 100%;*/
 	}
 
 		ul li {
+/*
 			padding-left: 2em;
             padding-right: 2em;
+*/
             float: left ;
             width: 33.33%;
 		}
