@@ -1414,7 +1414,7 @@
 */
 		background-image: url("../../images/bg2.jpg");
 
-        background-size: auto;
+        background-size: auto cover;
 		background-position: top center;
 	}
 
@@ -1997,8 +1997,8 @@
 	}
 
 		ul li {
-			padding-left: 2em;
-            padding-right: 2em;
+			padding-left: 0em;
+            padding-right: 0em;
             float: left ;
             width: 33.33%;
             
