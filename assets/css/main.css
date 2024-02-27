@@ -739,6 +739,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 	@media screen and (max-width: 980px) {
 
+
 		.row > * {
 			padding: 0 0 0 2em;
 		}
@@ -1373,12 +1374,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	}
 
 	body {
-		-ms-overflow-style: scrollbar;
+	    -ms-overflow-style: scrollbar;
+	    min-width: 320px;
+	    background-repeat: no-repeat;
+            background-size: cover;
+	    background-position: top center;}
 	}
+	
 
 	@media screen and (max-width: 480px) {
 		html, body {
-			min-width: 320px;}}
+		    min-width: 320px;
+		    background-repeat: repeat;
+	     	    background-size: cover;
+		    background-position: top center;}}
 
 	body {
 		background-color: #000;
@@ -1464,32 +1473,51 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 		@media screen and (max-width: 980px) {
 			h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
-				display: none;}}
+			    display: none;
+			}}
 
 	h1, bio {
 		font-size: 1.5em;}
+	
+	@media screen and (max-width: 980px) {
+	    
+	    h1 {
+		            width: 100%;
 
-		@media screen and (max-width: 980px) {
-			h1,bio {
-				font-size: 1.5em;
+			    margin: 20em 0 0em 0;
+			    padding: 0em 0 0 0;
 			}
 		}
 
 		@media screen and (max-width: 736px) {
 
-			h1,bio {
-				font-size: 1.25em;
+		    h1 {
+			width: 100%;
+			font-size: 1.3em;
+			padding: 0em 0 1em 0;
+                        margin:  -4em 0 0 0;
+			}
+		    bio {
+			width: 100%;
+			font-size: 1.3em;
+			padding: 0em 0 1em 0;
+			margin:  0em 0 0 0;
 			}
 		}
 
-	h2 {
-		font-size: 1.3em;
-	}
+		h2 {
+		    font-size: 1.3em;
+		    padding: 10em 0 1em 0;
+		    margin:  10em 0 0 0;
+		    width: 95%;
+		}
 
 		@media screen and (max-width: 736px) {
 
-			h2 {
-				font-size: 1em;
+		    h2 {
+			padding: 10em 0 0 0;
+			margin: 10em 0 0 0; 
+			font-size: 1em;
 			}
 
 		}
@@ -2066,7 +2094,27 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 					}
 
 			@media screen and (max-width: 480px) {
+		    h1 {
+			width: 100%;
+			font-size: 0.8em;
+			padding: 0em 0 0em 0;
+			margin:  0em 0 0em 0;
+			}
+                    bio {
+			width: 100%;
+			font-size: 0.8em;
+			padding: 0em 0 1em 0;
+                        margin:  0em 0 1em 0;
+                        }
+                }
 
+                h2 {
+                    font-size: 1.5em;
+                    padding: 5em 0 1em 0;
+                    margin:  10em 0 0 0;
+                    width: 95%;
+                }
+			    
 				ul.actions {
 					margin: 0 0 2em 0;
 				}
@@ -2538,7 +2586,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* Wrapper */
 
 	#wrapper {
-		max-width: 68em;
+		max-width: 100%;
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 2em;
@@ -2569,7 +2617,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 	#header {
 		text-align: center;
-		padding: 2em 0 4em 0;
+		padding: 2em 0 0em 0;
 	}
 
 		#header h1{
@@ -2590,7 +2638,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		    float:left;
 		    border-radius: 100%;
 		    display: inline-block;
-		    margin: 2em 0 0em 0;
+		    margin: 1em 0em 0em 3.5em;
 		    padding-top: 0em;
 		    border: solid 1px rgba(255, 255, 255, 1.0);
 		    background-color: rgba(255, 255, 255, 0.00);}
@@ -2603,8 +2651,25 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		@media screen and (max-width: 1280px) {
 
 			#header {
-				padding: 4em 0 2em 0;
+				padding: 2em 0 2em 0;
 			}
+			
+			#header .avatar img {
+			    display: block;
+			    margin-left: auto;
+			    margin-right: auto;
+			    
+			    border-radius: 50%;
+			    width: 0em;
+}
+			
+			#header bio {
+			    text-align: center;
+			    float: center;
+			    color: rgba(255, 255, 255, 1);
+			    width: 100%;
+			    background-color: rgba(74,74,74,0.75);}
+			
 
 		}
 
