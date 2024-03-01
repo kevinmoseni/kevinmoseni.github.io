@@ -1410,7 +1410,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.65);
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 12pt;
+		font-size: 14pt;
 		font-weight: 200;
 		line-height: 1.65;
 	}
@@ -1460,12 +1460,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	      margin-top: 1.3em;
 	      margin-right: 2em;
 	}
-	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+	h1, h2{
+		color: #ffffff;x
 		font-weight: 300;
 		line-height: 1.5;
-		margin: 1em 0 1em 0;
+		margin: 1em 0 0em 3em;
 		max-width: 90%;
+		
+	}
+	
+	h3, h4, h5, h6 {
+		color: #ffffff;
+		font-weight: 300;
+		max-width: 90%;
+
+                line-height: 1.2;
+                margin: 0em 0 0em 4em;
+
 		
 	}
 	
@@ -1475,58 +1486,112 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		}
 
 		@media screen and (max-width: 980px) {
+
+		            #wrapper {
+				max-width:70%;
+				width: 100%;
+				margin: 0 auto;
+				padding: 0 2em;
+				opacity: 1;
+				filter: none;
+				-moz-transition: opacity 1s ease, -moz-filter 1s ease;
+				-webkit-transition: opacity 1s ease, -webkit-filter 1s ease;
+				-ms-transition: opacity 1s ease, -ms-filter 1s ease;
+				transition: opacity 1s ease, filter 1s ease;
+        }
 			h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
 			    display: none;
 			}}
 
 	h1, bio {
-		font-size: 1.25em;}
+	    font-size: 1.2em;}
 	
 	@media screen and (max-width: 980px) {
 	    
 	    h1 {
-		            width: 100%;
-			    margin: 20em 0 0em 0;
-			    padding: 0em 0 1em 0;
-			}
-		}
-
+		width: 100%;
+		margin: 2em 0 0em 0.4em;
+		padding: 0em 0 1em 0;
+	    }
+	    h2 {
+		font-size: 1.em;
+                padding: 0em 0 1em 0;
+		margin:  1em 0 0 0;
+	        width: 95%;
+	            }
+            bio {
+		background-color: rgba(74,74,74,0.75);}
+		text-align: left;
+		width: 90%;
+		font-size: 1em;
+		padding: 0em 0.4em 1em 0.4em;
+		margin:  0em 0.4em 1em 0.4em;
+            }
+	    h3{
+	        color: #ffffff;
+                font-weight: 300;
+                line-height: 1.2;
+                margin: 0em 0 0em 4em;
+		padding-bottom: 0.75em;
+		max-width: 90%;
+				
+	    }
 		@media screen and (max-width: 736px) {
 
 		    h1 {
 			width: 100%;
 			font-size: 1.em;
 			padding: 0em 0 1em 0;
-                        margin:  -4em 0 0 0;
+                        margin:  -4em 0 0 0.4em;
 			}
 		    bio {
+			text-align: left;
 			width: 100%;
-			font-size: 1.em;
-			padding: 0em 0 1em 0;
-			margin:  0em 0 0 0;
+                        font-size: 1em;
+                    	padding: 0em 0.4em 1em 0.4em;
+                        margin:  0em 0.4em 1em 0.4em;
 		    }
 		   
 		    h2 {
-			font-size: 1.3em;
-			padding: 10em 0 1em 0;
-			margin:  10em 0 0 0;
+			font-size: 1.em;
+			padding: 0em 0 1em 0;
+			margin:  1em 0 0 0;
 			width: 95%;
 		    }
-
+		    h3, h4, h5, h6 {
+			color: #ffffff;
+			font-weight: 300;
+			line-height: 1.5;
+			margin: 0em 0 0em 1em;
+			max-width: 90%;
+			
+		    }
 		@media screen and (max-width: 736px) {
-
+		    bio {
+			text-align: left;
+                        width: 100%;
+                        font-size: 1em;
+                        padding: 0em 0.4em 1em 0.4em;
+                        margin:  0em 0.4em 1em 0.4em;
+                    }
+		    
 		    h2 {
-			padding: 10em 0 0 0;
-			margin: 10em 0 0 0; 
+			padding: em 0 0 0;
+			margin: 1em 0 0 0; 
 			font-size: 1em;
 			}
-
 		}
+                h3, h4, h5, h6 {
+                    color: #ffffff;
+                    font-weight: 300;
+                    line-height: 1.5;
+                    margin: 0em 0 0em 1em;
+                    max-width: 90%;
+                    }
+		
 
-	h3 {
-		font-size: 1em;
-	}
-
+                    
+	
 	h4 {
 		font-size: 1em;
 	}
@@ -2097,23 +2162,27 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 			@media screen and (max-width: 480px) {
 		    h1 {
 			width: 100%;
-			font-size: 0.8em;
+			font-size: 0.5em;
 			padding: 0em 0 0em 0;
-			margin:  0em 0 0em 0;
-			}
+			margin:  0em 0 0em 0.4em;
+		    }
+		    h3 {
+		    	margin-bottom:  0.5em;
+                        }
                     bio {
+			text-align: left;
 			width: 100%;
-			font-size: 0.8em;
-			padding: 0em 0 1em 0;
-                        margin:  0em 0 1em 0;
+			font-size: 0.5em;
+			padding: 0em 0.4em 1em 0.4em;
+                        margin:  0em 0.4em 1em 0.4em;
                         }
                 }
 
                 h2 {
-                    font-size: 1.5em;
-                    padding: 5em 0 1em 0;
-                    margin:  10em 0 0 0;
-                    width: 95%;
+                    font-size: 0.5em;
+                    padding: 0em 0 em 0;
+                    margin:  0.5em 0 0 0.4em;
+                    width: 100%;
                 }
 			    
 				ul.actions {
@@ -2665,7 +2734,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 			
 			#header bio {
-			    text-align: center;
+			    text-align: left;
 			    float: center;
 			    color: rgba(255, 255, 255, 1);
 			    width: 100%;
